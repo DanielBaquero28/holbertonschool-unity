@@ -1,6 +1,6 @@
 <html>
-<h1>Project:</h1>
-<p><strong></strong></p>
+<h1>Project: Unity User Interface</h1>
+<p><strong>In this project we'll be learning about the Unity UI. Basically how to use the platform.</strong></p>
 <body>
 <li><strong>Task 0:</strong> Which of the following is not a method of adding new assets or subfolders to a project?
 <ol>
