@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
                 tilt = Quaternion.Euler(90, 0, 0) * tilt;
             }
 
-            rb.AddForce(tilt * speed);
+            rb.AddForce(tilt);
         #endif
 	}
 
