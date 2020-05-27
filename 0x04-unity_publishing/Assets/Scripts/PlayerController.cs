@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     /// <summary>  </summary>
     public GameObject winLoseBg;
 
+    //private bool isFlat = true;
+
     void Update()
     {
         if (health == 0)
@@ -41,13 +43,29 @@ public class PlayerController : MonoBehaviour
     }
 	void FixedUpdate()
 	{
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
+        #if UNITY_STANDALONE_WIN
+        
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
-        Vector3 vector = new Vector3(horizontal * Time.deltaTime, 0.0f, vertical * Time.deltaTime);
+            Vector3 vector = new Vector3(horizontal * Time.deltaTime, 0.0f, vertical * Time.deltaTime);
 
-        rb.AddForce(vector * speed);
+            rb.AddForce(vector * speed);
+        #endif
+
+        #if UNITY_IOS
+        
+            Vector3 tilt = Input.acceleration;
+
+            if (true)
+            {
+                tilt = Quaternion.Euler(90, 0, 0) * tilt;
+            }
+
+            rb.AddForce(tilt);
+        #endif
 	}
+
 
     void OnTriggerEnter(Collider other)
     {
