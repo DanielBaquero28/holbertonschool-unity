@@ -97,6 +97,7 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 512
+  playerPos: {fileID: 8141072104296278770}
 --- !u!136 &6800762381020526470
 CapsuleCollider:
   m_ObjectHideFlags: 0

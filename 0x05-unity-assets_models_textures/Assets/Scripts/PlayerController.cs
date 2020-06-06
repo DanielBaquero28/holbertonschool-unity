@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public CapsuleCollider col;
     /// <summary> Layer Mask </summary>
     public LayerMask groundLayers;
+    /// <summary> Player's Transform Component </summary>
+    public Transform playerPos;
 
     void FixedUpdate()
     {
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             velocity.y = -2.2f;
         }
+
 
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
@@ -40,6 +43,11 @@ public class PlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (playerPos.position.y < -30f)
+		{
+			playerPos.position = new Vector3(0, 40, 0);
+		}
     }
 
     private bool IsGrounded()
