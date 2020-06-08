@@ -62,5 +62,11 @@ Create three builds of Level01 in a directory called Builds.
 </body>
 <br>
 <br>
-<footer>Made by: <strong><a href=“https://github.com/DanielBaquero28”>Daniel Baquero</a></strong></footer>
+<h4>Credits:</h4>
+<ul>
+<li>
+    <a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004#content">Skyboxes: Farland Skies - Cloudy Crown</a>
+</li>
+</ul>
+<footer>Made by: <strong><a href="https://github.com/DanielBaquero28">Daniel Baquero</a></strong></footer>
 </html>
