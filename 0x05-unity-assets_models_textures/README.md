@@ -65,6 +65,9 @@ Create three builds of Level01 in a directory called Builds.
 <li>
     <a href="https://assetstore.unity.com/packages/2d/textures-materials/sky/farland-skies-cloudy-crown-60004">Skyboxes: Farland Skies - Cloudy Crown</a>
 </li>
+<li>
+    <a href="https://kenney.nl/assets/nature-pack-extended">Models: Kenney's Nature Pack Extended</a>
+</li>
 </ul>
 <footer>Made by: <strong><a href="https://github.com/DanielBaquero28">Daniel Baquero</a></strong></footer>
 </html>
