@@ -16,6 +16,8 @@ Logs/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 Builds/
+/Debug/
+Debug/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
