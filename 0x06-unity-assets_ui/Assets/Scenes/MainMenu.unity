@@ -190,7 +190,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66631808}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 149454503}
+        m_MethodName: LevelSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &66631808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -307,6 +318,7 @@ GameObject:
   - component: {fileID: 149454501}
   - component: {fileID: 149454500}
   - component: {fileID: 149454499}
+  - component: {fileID: 149454503}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -400,6 +412,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &149454503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149454498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a6418d996f8ee4aafad1ba80e94bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &369513383
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +581,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 416615600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 149454503}
+        m_MethodName: LevelSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &416615600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,7 +860,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1162463947}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 149454503}
+        m_MethodName: LevelSelect
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1162463947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1127,6 +1173,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: OptionsButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4854294339455952707, guid: 08cf408adcde2b54392c69f732c071ef,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 149454503}
+    - target: {fileID: 4854294339455952707, guid: 08cf408adcde2b54392c69f732c071ef,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 4854294339455952707, guid: 08cf408adcde2b54392c69f732c071ef,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08cf408adcde2b54392c69f732c071ef, type: 3}
 --- !u!1001 &6649803196318793501
@@ -1245,6 +1306,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ExitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649803195757128635, guid: bd2b20792cbc45e4dbe52c42046804f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649803195757128635, guid: bd2b20792cbc45e4dbe52c42046804f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649803195757128635, guid: bd2b20792cbc45e4dbe52c42046804f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649803195757128635, guid: bd2b20792cbc45e4dbe52c42046804f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 149454503}
+    - target: {fileID: 6649803195757128635, guid: bd2b20792cbc45e4dbe52c42046804f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6649803195757128635, guid: bd2b20792cbc45e4dbe52c42046804f1,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd2b20792cbc45e4dbe52c42046804f1, type: 3}
