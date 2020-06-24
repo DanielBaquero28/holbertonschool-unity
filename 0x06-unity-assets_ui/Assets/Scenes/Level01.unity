@@ -693,6 +693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 392991978}
+  - component: {fileID: 392991979}
   m_Layer: 0
   m_Name: Trees
   m_TagString: Untagged
@@ -721,6 +722,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &392991979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392991977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a439bfdbb55883459947917bfda7edc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseCanvas: {fileID: 551850484}
 --- !u!1001 &395767608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1290,6 +1304,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1417115757}
   timeText: {fileID: 316180427}
+--- !u!1 &551850484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3002068227526068889, guid: eefba0121e7732f40b7f2222fd51586a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3002068226999393133}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &571343310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4633,7 +4653,43 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseCanvas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3002068227526068889, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002068227989554429, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002068227989554429, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002068227989554429, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002068227989554429, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 392991979}
+    - target: {fileID: 3002068227989554429, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 3002068227989554429, guid: eefba0121e7732f40b7f2222fd51586a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8084382924683318011, guid: eefba0121e7732f40b7f2222fd51586a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eefba0121e7732f40b7f2222fd51586a, type: 3}
 --- !u!1001 &8141072104793010349
 PrefabInstance:
