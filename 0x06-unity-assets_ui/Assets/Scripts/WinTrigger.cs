@@ -15,6 +15,13 @@ public class WinTrigger : MonoBehaviour
 
     bool confined = false;
 
+    void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         if (confined)
@@ -23,15 +30,13 @@ public class WinTrigger : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.lockState = CursorLockMode.Confined;
         }
-        else
-            Cursor.lockState = CursorLockMode.Locked;
     }
 
     void OnTriggerEnter()
     {
         confined = true;
-        Debug.Log("Cursor: " + Cursor.lockState);
         player.GetComponent<Timer>().enabled = false;
+        player.GetComponent<PlayerController>().enabled = false;
         winCanvas.SetActive(true);
         timeText.gameObject.SetActive(false);
         //Debug.Log("Time Text:" + timeText.text);
