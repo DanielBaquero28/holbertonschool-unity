@@ -16,6 +16,7 @@ public class OptionsMenu : MonoBehaviour
     }
     public void Back()
     {
+        //Debug.Log(PlayerPrefs.GetString("lastLoadedScene"));
         SceneManager.LoadScene(PlayerPrefs.GetString("lastLoadedScene"));
     }
 
