@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -6,6 +7,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseCanvas;
 
     private bool pausedMenu = false;
+
+    public void Start()
+    {
+        Cursor.visible = false;
+    }
+
 
     public void Update()
     {
@@ -37,5 +44,23 @@ public class PauseMenu : MonoBehaviour
         pausedMenu = false;
         PauseCanvas.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Options()
+    {
+        SceneManager.LoadScene(1);
     }
 }

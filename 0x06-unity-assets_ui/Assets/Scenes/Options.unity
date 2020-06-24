@@ -387,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84e3101a85fbc84982951dc6c9f2e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isInverted: {fileID: 1623846665}
 --- !u!224 &163421860 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6643459143299429425, guid: 4ce4870a231a3b44d870176835c78bf4,
@@ -2042,6 +2043,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 149454502}
     m_Modifications:
+    - target: {fileID: 6643459143299429424, guid: 4ce4870a231a3b44d870176835c78bf4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459143299429424, guid: 4ce4870a231a3b44d870176835c78bf4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459143299429424, guid: 4ce4870a231a3b44d870176835c78bf4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459143299429424, guid: 4ce4870a231a3b44d870176835c78bf4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 149454503}
+    - target: {fileID: 6643459143299429424, guid: 4ce4870a231a3b44d870176835c78bf4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Apply
+      objectReference: {fileID: 0}
+    - target: {fileID: 6643459143299429424, guid: 4ce4870a231a3b44d870176835c78bf4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6643459143299429425, guid: 4ce4870a231a3b44d870176835c78bf4,
         type: 3}
       propertyPath: m_LocalPosition.x
