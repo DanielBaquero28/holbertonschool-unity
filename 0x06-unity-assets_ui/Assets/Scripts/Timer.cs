@@ -12,11 +12,12 @@ public class Timer : MonoBehaviour
     int MinuteCount;
     int SecondCount;
     float MilliCount;
+    /// <summary> Public Static variable time text </summary>
+    public static Text finalTimeText;
 
     void Start()
     {
         timer = 0.0f;
-        Cursor.lockState = CursorLockMode.Locked;
     }
     
     // Update is called once per frame
@@ -32,5 +33,10 @@ public class Timer : MonoBehaviour
         }
     
         timeText.text = string.Format("{0:0}:{1:00}.{2:00}", MinuteCount, SecondCount, MilliCount);   
+    }
+
+    public void Win()
+    {
+        finalTimeText.text = timeText.text;
     }
 }

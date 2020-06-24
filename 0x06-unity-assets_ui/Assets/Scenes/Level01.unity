@@ -1319,6 +1319,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1417115757}
   timeText: {fileID: 316180427}
+  winCanvas: {fileID: 985268438}
+  winText: {fileID: 4889722242689945727}
 --- !u!1 &551850484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3002068227526068889, guid: eefba0121e7732f40b7f2222fd51586a,
@@ -1888,7 +1890,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800451482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25, z: -0.523}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2275,6 +2277,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: f6a7c81bb74689947a0a8fdf27725b68,
     type: 3}
   m_PrefabInstance: {fileID: 1849601280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &985268438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4889722243386855596, guid: f6f7a348abc612f4bbe77f1853d56f25,
+    type: 3}
+  m_PrefabInstance: {fileID: 4889722242689945722}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &989699971
 PrefabInstance:
@@ -4914,8 +4922,97 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4889722243386855596, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916434000466825338, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916434000466825338, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916434000466825338, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916434000466825338, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4889722242689945723}
+    - target: {fileID: 4916434000466825338, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916434000466825338, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301808515448388924, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301808515448388924, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301808515448388924, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301808515448388924, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4889722242689945723}
+    - target: {fileID: 8301808515448388924, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8301808515448388924, guid: f6f7a348abc612f4bbe77f1853d56f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f7a348abc612f4bbe77f1853d56f25, type: 3}
+--- !u!114 &4889722242689945723 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 180527143944276776, guid: f6f7a348abc612f4bbe77f1853d56f25,
+    type: 3}
+  m_PrefabInstance: {fileID: 4889722242689945722}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985268438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3770f850c4751e49b7118d42d4df9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4889722242689945727 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3959473598121528502, guid: f6f7a348abc612f4bbe77f1853d56f25,
+    type: 3}
+  m_PrefabInstance: {fileID: 4889722242689945722}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8141072104793010349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4923,6 +5020,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1998426652}
     m_Modifications:
+    - target: {fileID: 731512008416804673, guid: 456bda3138bb5ed41993e83d20a8f57b,
+        type: 3}
+      propertyPath: timeText
+      value: 
+      objectReference: {fileID: 316180427}
+    - target: {fileID: 731512008416804673, guid: 456bda3138bb5ed41993e83d20a8f57b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2961202074318129576, guid: 456bda3138bb5ed41993e83d20a8f57b,
         type: 3}
       propertyPath: controller
