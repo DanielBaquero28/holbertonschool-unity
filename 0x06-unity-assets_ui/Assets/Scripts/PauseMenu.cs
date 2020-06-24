@@ -16,19 +16,19 @@ public class PauseMenu : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log("Update: " + Cursor.lockState);
+        //Debug.Log("Update: " + Cursor.lockState);
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //Debug.Log("Entered Update");
             if (pausedMenu == true)
             {
                 Resume();
-                Debug.Log("pausedMenu = true: " + Cursor.lockState);
+                //Debug.Log("pausedMenu = true: " + Cursor.lockState);
             }
             else
             {
                 Pause();
-                Debug.Log("else: " + Cursor.lockState);
+                //Debug.Log("else: " + Cursor.lockState);
             }
         }
     }  
