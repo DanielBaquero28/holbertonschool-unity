@@ -20,5 +20,10 @@ public class CharacterAnim : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            anim.SetTrigger("Jump");
+        }
     }
 }
