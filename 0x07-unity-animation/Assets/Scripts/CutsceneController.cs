@@ -14,7 +14,7 @@ public class CutsceneController : MonoBehaviour
 
     Animator anim;
 
-    void Awake()
+    void Start()
     {
         anim = GetComponent<Animator>();
     }
