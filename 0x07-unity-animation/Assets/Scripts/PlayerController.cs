@@ -19,9 +19,16 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayers;
     /// <summary> Player's Transform Component </summary>
     public Transform playerPos;
+    public static int isFalling = 0;
 
     void FixedUpdate()
     {
+        if (playerPos.position.y > -1f)
+        {
+            isFalling = 0;
+        }
+        isFalling = 0;
+
         if (IsGrounded() && velocity.y < 0)
         {
             velocity.y = -2.2f;
@@ -46,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
         if (playerPos.position.y < -30f)
 		{
+            isFalling = 1;
 			playerPos.position = new Vector3(0, 40, 0);
 		}
     }

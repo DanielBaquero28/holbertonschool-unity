@@ -3,6 +3,8 @@
 public class CharacterAnim : MonoBehaviour
 {
     Animator anim;
+    /// <summary> Player's Transform Component </summary>
+    public Transform playerPos;
 
     void Start()
     {
@@ -24,6 +26,11 @@ public class CharacterAnim : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetTrigger("Jump");
+        }
+
+        if (PlayerController.isFalling == 1)
+        {
+            anim.SetTrigger("isFalling");
         }
     }
 }
