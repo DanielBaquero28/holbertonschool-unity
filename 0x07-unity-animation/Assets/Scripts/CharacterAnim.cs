@@ -31,10 +31,6 @@ public class CharacterAnim : MonoBehaviour
         if (playerPos.position.y < -30f)
         {
             anim.SetTrigger("isFalling");
-            if (playerPos.position.y == 40f)
-            {
-                anim.SetTrigger("fromSky");
-            }
         }
     }
 }
