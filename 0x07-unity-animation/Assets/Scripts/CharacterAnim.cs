@@ -28,9 +28,21 @@ public class CharacterAnim : MonoBehaviour
             anim.SetTrigger("Jump");
         }
 
-        if (playerPos.position.y < -30f)
+        if (playerPos.position.y == 40.0f)
         {
+            //Debug.Log("Checking if enters conditional to trigger");
             anim.SetTrigger("isFalling");
         }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("isFalling"))
+        {
+            Debug.Log("Activated Trigger isFalling");
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
+        {
+            Debug.Log("Activated Triger Jump");
+        }
+        
     }
 }
