@@ -6,6 +6,10 @@ public class CharacterAnim : MonoBehaviour
     /// <summary> Player's Transform Component </summary>
     public Transform playerPos;
 
+    int flagFalling = 0;
+
+    AnimatorClipInfo[] clipInfo;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -32,6 +36,15 @@ public class CharacterAnim : MonoBehaviour
         {
             //Debug.Log("Checking if enters conditional to trigger");
             anim.SetTrigger("isFalling");
+            flagFalling = 1;
+        }
+
+        if (flagFalling == 1 && (int)playerPos.position.y == 1)
+        {
+            Debug.Log("Entered condition flatImpact");
+            anim.SetTrigger("flatImpact");
+            anim.ResetTrigger("isFalling");
+            flagFalling = 0;
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("isFalling"))
@@ -41,8 +54,22 @@ public class CharacterAnim : MonoBehaviour
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
         {
-            Debug.Log("Activated Triger Jump");
+            Debug.Log("Activated Trigger Jump");
         }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("flatImpact"))
+        {
+            Debug.Log("Activated Trigger flatImpact");
+        }
+
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("isFalling"))
+        {
+            Debug.Log("Activated Trigger isFalling");
+        }
+
+        //clipInfo = anim.GetCurrentAnimatorClipInfo(0);
+        //Debug.Log(clipInfo[0].clip.name);
+        //Debug.Log((int)playerPos.position.y);
         
     }
 }
