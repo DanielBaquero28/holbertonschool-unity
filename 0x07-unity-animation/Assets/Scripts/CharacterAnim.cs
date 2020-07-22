@@ -41,7 +41,7 @@ public class CharacterAnim : MonoBehaviour
 
         if (flagFalling == 1 && (int)playerPos.position.y == 1)
         {
-            Debug.Log("Entered condition flatImpact");
+            //Debug.Log("Entered condition flatImpact");
             anim.SetTrigger("flatImpact");
             anim.ResetTrigger("isFalling");
             flagFalling = 0;
@@ -49,22 +49,22 @@ public class CharacterAnim : MonoBehaviour
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("isFalling"))
         {
-            Debug.Log("Activated Trigger isFalling");
+            //Debug.Log("Activated Trigger isFalling");
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("Jump"))
         {
-            Debug.Log("Activated Trigger Jump");
+            //Debug.Log("Activated Trigger Jump");
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("flatImpact"))
         {
-            Debug.Log("Activated Trigger flatImpact");
+            //Debug.Log("Activated Trigger flatImpact");
         }
 
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("isFalling"))
         {
-            Debug.Log("Activated Trigger isFalling");
+            //Debug.Log("Activated Trigger isFalling");
         }
 
         //clipInfo = anim.GetCurrentAnimatorClipInfo(0);

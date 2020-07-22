@@ -58,16 +58,4 @@ public class PlayerController : MonoBehaviour
         return (Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,
         col.bounds.min.y, col.bounds.center.z),col.radius * 0.9f, groundLayers));
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Grass")
-        {
-            flag = true;
-        }
-        else if (other.tag == "Rock")
-        {
-            flag = false;
-        }
-    }
 }
