@@ -4,23 +4,30 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    /// <summary> Running Grass Audio </summary>
     public AudioSource runningGrass;
-
+    /// <summary> Landing Grass Audio </summary>
     public AudioSource landingGrass;
+    /// <summary> Player's Character Controller </summary>
     public CharacterController cc;
-
     /// <summary> Capsules's Collider </summary>
     public CapsuleCollider col;
     /// <summary> Layer Mask </summary>
     public LayerMask groundLayers;
     /// <summary> Player's Transform Component </summary>
     public Transform playerPos;
-
+    /// <summary> Paused Audio Mixer Snapshot </summary>
+    public AudioMixerSnapshot paused;
+    /// <summary> Unpaused Audio Mixer Snapshot </summary>
+    public AudioMixerSnapshot unpaused;
     int flagFalling = 0;
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Pause();
+
         if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D)) && IsGrounded())
         {
             //Debug.Log("Started");
@@ -47,6 +54,19 @@ public class AudioManager : MonoBehaviour
         
     }
 
+    public void Pause()
+    {
+        Time.timeScale = Time.timeScale == 0 ? 1 : 0;
+        Lowpass();
+    }
+
+    void Lowpass()
+    {
+        if (Time.timeScale == 0)
+            unpaused.TransitionTo(0.01f);
+        else
+            paused.TransitionTo(0.01f);
+    }
     private bool IsGrounded()
     {
         return (Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x,

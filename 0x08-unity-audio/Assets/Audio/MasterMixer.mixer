@@ -11,6 +11,7 @@ AudioMixerController:
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
   - {fileID: 24500006}
+  - {fileID: 245456783719074070}
   m_StartSnapshot: {fileID: 24500006}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -70,7 +71,7 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: RunningGrass
+  m_Name: Unpaused
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 5230a3ad4e12b644989612a20b5b46b1
   m_FloatValues:
@@ -80,6 +81,7 @@ AudioMixerSnapshotController:
     c8bd0ee4754691745ade5439b9315765: -0.10231405
     e8ba1285832f29f4c87a0cbcb7418fdb: 5
     5aabdba666e0e8a468aef1927dd84992: -80
+    13c689b65ed8c5b4096604139e043fb8: 22000
   m_TransitionOverrides: {}
 --- !u!243 &243051168429566460
 AudioMixerGroupController:
@@ -113,6 +115,7 @@ AudioMixerGroupController:
   m_Pitch: faa3c2421fbc12e43afd2e2d50cd03ae
   m_Effects:
   - {fileID: 244662865088214474}
+  - {fileID: 244334929164592750}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -203,6 +206,24 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &244334929164592750
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: d7b3e3a5ad536e7489ed806c41d8bfa6
+  m_EffectName: Lowpass
+  m_MixLevel: 4d32bd1c6afd42f46a61bc571e311273
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 13c689b65ed8c5b4096604139e043fb8
+  - m_ParameterName: Resonance
+    m_GUID: 7a7acc8a365dd4b48a71afd91e81a11f
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244506078323305688
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -251,3 +272,21 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!245 &245456783719074070
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Paused
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 0141681d3f0128740a48f998101476b5
+  m_FloatValues:
+    7b7bce100d79695419712783de0cff33: -20
+    5c5bcef15e7b64a4b81e9e66653e8ba2: -20
+    5acbd4143e4b027428a049522bb3fba2: 2
+    c8bd0ee4754691745ade5439b9315765: -0.10231405
+    e8ba1285832f29f4c87a0cbcb7418fdb: 5
+    5aabdba666e0e8a468aef1927dd84992: -80
+    13c689b65ed8c5b4096604139e043fb8: 365
+  m_TransitionOverrides: {}
