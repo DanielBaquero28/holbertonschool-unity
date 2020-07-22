@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 /// <summary> Winning Class in charge of stopping timer </summary>
 public class WinTrigger : MonoBehaviour
@@ -12,7 +13,8 @@ public class WinTrigger : MonoBehaviour
     public GameObject winCanvas;
     /// <summary> Winner Time Text </summary>
     public Text winText;
-
+    /// <summary> Background audio Source </summary>
+    public AudioSource backgroundAudio;
     bool confined = false;
 
     void Start()
@@ -41,6 +43,7 @@ public class WinTrigger : MonoBehaviour
         timeText.gameObject.SetActive(false);
         //Debug.Log("Time Text:" + timeText.text);
         winText.text = timeText.text;
+        backgroundAudio.Stop();
         //Debug.Log("WinText: " + winText.text);
     }
 }
