@@ -24,6 +24,9 @@ public class AudioManager : MonoBehaviour
     public AudioMixerSnapshot unpaused;
     int flagFalling = 0;
 
+    /// <summary> MasterMixer </summary>
+    public AudioMixer MasterMixer;
+
     void Start()
     {
         backgroundMusic.volume = PlayerPrefs.GetFloat("BGM");
@@ -75,6 +78,12 @@ public class AudioManager : MonoBehaviour
             unpaused.TransitionTo(0.01f);
         else
             paused.TransitionTo(0.01f);
+    }
+
+    public void SetBGM()
+    {
+        float volume = PlayerPrefs.GetFloat("BGM");
+        MasterMixer.SetFloat("BGM", Mathf.Log10(volume) * 20);        
     }
     private bool IsGrounded()
     {

@@ -1763,6 +1763,7 @@ MonoBehaviour:
   playerPos: {fileID: 1998426652}
   paused: {fileID: 245456783719074070, guid: ebe4b87a3aed84e45844b973f0bfeb9f, type: 2}
   unpaused: {fileID: 24500006, guid: ebe4b87a3aed84e45844b973f0bfeb9f, type: 2}
+  MasterMixer: {fileID: 24100000, guid: ebe4b87a3aed84e45844b973f0bfeb9f, type: 2}
 --- !u!4 &645448232
 Transform:
   m_ObjectHideFlags: 0
