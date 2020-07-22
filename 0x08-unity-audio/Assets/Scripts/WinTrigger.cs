@@ -15,6 +15,8 @@ public class WinTrigger : MonoBehaviour
     public Text winText;
     /// <summary> Background audio Source </summary>
     public AudioSource backgroundAudio;
+    /// <summary> Win Sting Audio </summary>
+    public AudioSource winSting;
     bool confined = false;
 
     void Start()
@@ -44,6 +46,7 @@ public class WinTrigger : MonoBehaviour
         //Debug.Log("Time Text:" + timeText.text);
         winText.text = timeText.text;
         backgroundAudio.Stop();
+        winSting.Play();
         //Debug.Log("WinText: " + winText.text);
     }
 }
