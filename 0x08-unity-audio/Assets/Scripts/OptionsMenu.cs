@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class OptionsMenu : MonoBehaviour
 {
     /// <summary> Toggle of inverted mouse </summary>
     public Toggle isInverted;
+    /// <summary> BGM AudioMixer </summary>
+    //public AudioMixer MasterMixer;
 
     public void Start()
     {
@@ -24,4 +27,6 @@ public class OptionsMenu : MonoBehaviour
     {
         PlayerPrefs.SetString("isInverted", isInverted.isOn.ToString());
     }
+
+    
 }

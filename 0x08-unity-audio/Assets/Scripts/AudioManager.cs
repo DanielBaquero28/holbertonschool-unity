@@ -4,6 +4,8 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+    /// <summary> Background Audio </summary>
+    public AudioSource backgroundMusic;
     /// <summary> Running Grass Audio </summary>
     public AudioSource runningGrass;
     /// <summary> Landing Grass Audio </summary>
@@ -21,6 +23,13 @@ public class AudioManager : MonoBehaviour
     /// <summary> Unpaused Audio Mixer Snapshot </summary>
     public AudioMixerSnapshot unpaused;
     int flagFalling = 0;
+
+    void Start()
+    {
+        backgroundMusic.volume = PlayerPrefs.GetFloat("BGM");
+        runningGrass.volume = PlayerPrefs.GetFloat("SFX");
+        landingGrass.volume = PlayerPrefs.GetFloat("SFX");
+    }
 
     // Update is called once per frame
     void Update()
