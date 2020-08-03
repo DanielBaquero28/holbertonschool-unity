@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 802b66b6f0f2ec940b6a3278e42f3e1d
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 180
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Modeco Trial
+  fontNames:
+  - Modeco Trial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 69c5d750bbe1add499e7bc53655a3131, type: 3}
+  - {fileID: 12800000, guid: 7a8cfeab153da0d43a3a7d0d82f84361, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
