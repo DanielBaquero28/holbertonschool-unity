@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69c5d750bbe1add499e7bc53655a3131
+guid: a58045042b7919f479598d3226d4186b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -11,7 +11,10 @@ TrueTypeFontImporter:
   fontName: Modeco Trial
   fontNames:
   - Modeco Trial
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a422082178537fd4b90ce7618d080580, type: 3}
+  - {fileID: 12800000, guid: 94a2939291128dc47a70274baefd7417, type: 3}
+  - {fileID: 12800000, guid: 50a824f99dafec84ea1c911703a86180, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
