@@ -16,6 +16,11 @@ public class PlaneManager : MonoBehaviour
     static List<ARRaycastHit> raycastHits = new List<ARRaycastHit>();
 
     public GameObject startButton;
+    public GameObject instanceObject { get; private set; }
+    public GameObject obstaclePrefab;
+    float i = 0.07f;
+    float j = -0.07f;
+    public int numberTargets = 3;
 
     int flag = 0;
     void Awake()
@@ -34,9 +39,14 @@ public class PlaneManager : MonoBehaviour
                 if(_RaycastManager.Raycast(touch.position, raycastHits, TrackableType.PlaneWithinPolygon))
                 {
                     chosenPlane = _PlaneManager.GetPlane(raycastHits[0].trackableId);
-
+                    Vector3 centerPlane = new Vector3(chosenPlane.center.x, chosenPlane.center.y, chosenPlane.center.z);
+                    instanceObject = Instantiate(obstaclePrefab, centerPlane, Quaternion.identity);
+                    for (int k = 1; k < numberTargets; k++, i += 0.07f, j -= 0.07f)
+                        instanceObject = Instantiate(obstaclePrefab, centerPlane + new Vector3(i, 0, j), Quaternion.identity);
                     foreach (var plane in _PlaneManager.trackables)
                     {
+                        if (plane == chosenPlane)
+                            continue;
                         plane.gameObject.SetActive(false);
                     }
                     startButton.SetActive(true);
