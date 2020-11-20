@@ -3,6 +3,7 @@
 <body>
 <p><strong>In this project we'll be having an introduction to shaders in Unity. We'll be using a shader's tool developed by Unity called ShaderGraph. We will create different types of effects combining materials, textures and shaders. Feel free to dive in the repo and see how they are made. Have fun!</strong></p>
 <img src="https://github.com/DanielBaquero28/holbertonschool-unity/blob/master/0x0D-unity-shadergraph/Images/Glow-effect_Unity.png" alt="Unity Glow Effect ShaderGraph" align="middle">
+<img src="https://github.com/DanielBaquero28/holbertonschool-unity/blob/master/0x0D-unity-shadergraph/Images/Glow-effect_Unity2.png" alt="Unity Glow Effect ShaderGraph" align="middle">
 <h2>Related Projects</h2>
 <p>There are no related projects yet regarding ShaderGraph(Unity).</p>
 <h2>About Myself</h2>
